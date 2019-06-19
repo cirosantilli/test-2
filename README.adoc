@@ -1,0 +1,113 @@
+= www.cirosantilli.com
+:idprefix:
+:idseparator: -
+:sectanchors:
+:sectlinks:
+:sectnumlevels: 6
+:sectnums:
+:toc: macro
+:toclevels: 6
+:toc-title:
+
+Source for: <https://www.cirosantilli.com>
+
+toc::[]
+
+== About this repo
+
+If you have something to say to me, you can open an issue on this repo, even if it is not related to the repo.
+
+I also use this repo as generic issue tracker for stuff that lacks a decent public issue tracker, e.g. companies / government.
+
+Run local server:
+
+    gem install bundle
+    bundle install
+    xdg-open http://localhost:4000
+    ./run
+
+Update gems:
+
+    bundle update
+    git add Gemfile.lock
+
+=== Why I removed Disqus comments from the website in 2019-05-04
+
+Commit: https://github.com/cirosantilli/cirosantilli.github.io/commit/794705a201a79b5128934e69df85e3511655c03f
+
+As I started getting a lot of comments on my home page, mostly about China, I decided that Disqus does not scale, and that it would be more productive long term to remove it and point people to GitHub issues instead.
+
+Upsides of removal:
+
+* Disqus discoverability is bad:
+** there is no decent way to search existing issues, you have to do JavaScript infinite loading + Ctrl + F. So every reply that I write is a waste of time, as it will never be seen again. 
+** comments don't have: decent URLs, titles, metadata like tags or open / close
+* Disqus archival is bad: http://web.archive.org/ does not work, and no one knows how to export the issues: https://www.archiveteam.org/index.php?title=Disqus
+* before, I had two places where people could comment, Disqus and GitHub issues. Now there is just one.
+* Disqus has ads if you ever reach enough traffic, which I'm not willing to have on my website, especially if I don't get paid for them! It also makes page loads slower, although that likely does not matter much.
+
+Downsides:
+
+* people are more likely to comment on Disqus than to create an issue on GitHub, especially because most people use GitHub professionally. But this has the upside that there will be less shitposts as well.
+* with Disqus you can see all issues attached to a page automatically, which is nice. But for as long as I'm around, I intend to just solve the issues, cross link between content and issues and tag things appropriately.
+
+My stance towards China hasn't changed, and China comments and corrections about this website are still welcome as always.
+
+Related issue: https://github.com/cirosantilli/cirosantilli.github.io/issues/37
+
+== Video games
+
+The things I like the most about video games as an adult are to watch:
+
+* TAS: https://en.wikipedia.org/wiki/Tool-assisted_speedrun
+* speed running evolution videos, which I consider as a probabilistic human achievable TAS
+
+The most beautiful TAS I have ever seen are (highly biased by games I played casually when young):
+
+* Super mario 64
+** no-A press 120 stars attempts by shttps://en.wikipedia.org/wiki/Pannenkoek2012
++
+2018 video outlining the 18 unique A presses missing for 120-stars at the time: https://www.youtube.com/watch?v=RJaL5QOq590
++
+One of the most elaborate explained videos: https://www.youtube.com/watch?v=kpk2tdsPh0A "SM64 - Watch for Rolling Rocks - 0.5x A Presses"
+** 1-key any percent run:
+*** 2016 emulator run: https://www.youtube.com/watch?v=TkOkJvLKxUY
+*** AGDQ 2018 commented TASBOT console verification: https://www.youtube.com/watch?v=xvWOLT9G6tM
+*** Why we need one key: https://gaming.stackexchange.com/questions/249969/in-mario-64-speedruns-why-are-the-keys-necessary/351595#351595
+* Super Mario World for the SNES abitrary code execution
+** https://www.youtube.com/watch?v=OPcV9uIY5i4 with in-game programmed Pong and Snake, 2014
+** https://www.youtube.com/watch?v=HxFh1CJOrTU Seth Bling does it manually in about 3 minutes, 2015
+*** then he injected a Flappy Bird clone maunally!!! https://www.youtube.com/watch?v=hB6eY73sLV0, 2016
+* Zelda ocarina of time wrong warp glitch:
+** https://www.youtube.com/watch?v=uCO0jU66g3g 2016 video
+** https://www.youtube.com/watch?v=Gso4MuNSuV8 EZScape explains the glitch, 2016
+
+== Physics
+
+=== Particle physics
+
+AKA: standard model.
+
+==== What does it mean that photos are force carriers for electromagnetism?
+
+https://physics.stackexchange.com/questions/61095/photon-as-the-carrier-of-the-electromagnetic-force
+
+==== Why do symmetries such as SU(3)×SU(2)×U(1) matter in particle physics?
+
+TODO.
+
+==== Particle physics applications
+
+* https://www.quora.com/What-if-any-are-the-widespread-applications-of-quantum-field-theory-today
+* https://www.quora.com/What-commercial-applications-in-high-energy-particle-physics-and-the-results-coming-out-of-the-LHC-do-we-expect-to-see-in-the-next-5-10-years
+
+==== Quantum Chromodynamics
+
+https://www.youtube.com/watch?v=FoR3hq5b5yE "Quarks, Gluon flux tubes, Strong Nuclear Force, & Quantum Chromodynamics" by "Physics Videos by Eugene Khutoryansky". Some decent visualizations.
+
+==== Bibliography
+
+Youtube channels:
+
+* PBS Space Time: https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g A bit on the superficial side, but OK, 5-10 minute videos.
+* Physics Videos by Eugene Khutoryansky https://www.youtube.com/user/EugeneKhutoryansky Some insight, but too slow and not experiments, just "truth".

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+        Articles -
+      
+      Ciro Santilli
+    </title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.gravatar.com/avatar/c979bd881b6755f84947a5a8ecc7c6f7.png" />
+    <!-- #jquery. Must come *before* all its many dependencies. -->
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- #bootstrap -->
+      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- #data table -->
+      <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+      <style>
+        table.dataTable tr.odd { background-color: white; }
+        table.dataTable tr.even { background-color: white; }
+        table.dataTable tr.odd td.sorting_1 { background-color: white; }
+        table.dataTable tr.odd td.sorting_2 { background-color: white; }
+        table.dataTable tr.odd td.sorting_3 { background-color: white; }
+        table.dataTable tr.even td.sorting_1 { background-color: white; }
+        table.dataTable tr.even td.sorting_2 { background-color: white; }
+        table.dataTable tr.even td.sorting_3 { background-color: white; }
+      </style>
+    <!-- #font awesome font icons -->
+      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Custom styles and scripts. Come at end to use and override libraries. -->
+      <!--<script src="/assets/main.js"></script>-->
+      <link rel="stylesheet" href="/assets/main.css"/>
+      <link rel="stylesheet" href="/assets/header-link.css"/>
+      <link rel="stylesheet" href="/assets/syntax.css"/>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Ciro Santilli</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              
+              <li >
+                <a href="/articles" title="">Articles</a>
+              </li>
+              
+              <li >
+                <a href="/projects" title="">Projects</a>
+              </li>
+              
+              <li >
+                <a href="/skills" title="">Skills</a>
+              </li>
+              
+              <li >
+                <a href="/interests" title="">Interests</a>
+              </li>
+              
+              <li >
+                <a href="/education" title="">Education</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="article-and-sidebar">
+      <div class="content">
+        <aside>
+          <div>
+            <a href="/">
+              <img style="width:100%;" src="/assets/me.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a class="nav" href="https://stackoverflow.com/users/895245"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+            <a class="nav" href="https://github.com/cirosantilli"><i class="fa fa-github fa-fw"></i>GitHub</a>
+            <a class="nav" href="https://www.linkedin.com/in/cirosantilli"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+            <a class="nav" href="https://www.youtube.com/channel/UCBrJjpKMpdrkA1VsAiR2wEg"><i class="fa fa-youtube fa-fw"></i>YouTube</a>
+            <a class="nav" href="https://twitter.com/cirosantilli"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
+            
+            <a class="nav" href="https://www.zhihu.com/people/cirosantilli/activities"><i class="fa fa-question-circle fa-fw"></i>Zhihu 知乎</a>
+            <a class="nav" href="https://www.weibo.com/p/1005055601627311"><i class="fa fa-weibo fa-fw"></i>Weibo 微博</a>
+            
+            <a class="nav" href="/accounts"><i class="fa fa-ellipsis-h fa-fw"></i>Other accounts</a>
+          </div>
+          <div>
+            
+            
+            
+            
+            
+            <a class="nav" href="https://github.com/cirosantilli/cirosantilli.github.io/issues/new?title=Articles%20-%20">
+              <i class="fa fa-exclamation-circle fa-fw"></i>Report Issue
+            </a>
+          </div>
+        </aside>
+        <main>
+          <h1 class="page-title">Articles</h1>
+          
+          
+          <p>Short focused articles. Updates on Twitter: <a href="https://twitter.com/cirosantilli">https://twitter.com/cirosantilli</a></p>
+
+<ul>
+  <li>Trended on <a href="https://news.ycombinator.com/">Hacker News</a>
+    <ul>
+      <li><a href="https://github.com/cirosantilli/x86-bare-metal-examples">x86 Bare Metal Examples</a> on <a href="https://news.ycombinator.com/item?id=19428700">2019-03-19</a>. The third time something related to that repo trends. Hacker news people really like that repo!</li>
+      <li><a href="https://stackoverflow.com/questions/22054578/how-to-run-a-program-without-an-operating-system/32483545#32483545">How to run a program without an operating system?</a> on <a href="https://web.archive.org/web/20181126123625/https://news.ycombinator.com">2018-11-26</a>. Covers x86 and ARM.</li>
+      <li><a href="/elf-hello-world">ELF Hello World Tutorial</a> on <a href="https://web.archive.org/web/20170517174951/https://news.ycombinator.com/news">2017-05-17</a></li>
+      <li><a href="/x86-paging">x86 Paging Tutorial</a> on <a href="https://news.ycombinator.com/item?id=13773219">2017-03-02</a>. Number 1 Google search result for “x86 Paging” <a href="https://archive.is/VUSNt">in 2017-08</a>.</li>
+    </ul>
+  </li>
+  <li>x86 Assembly
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/980999/what-does-multicore-assembly-language-look-like/33651438#33651438">What does “multicore” assembly language look like?</a></li>
+    </ul>
+  </li>
+  <li>Linux kernel
+    <ul>
+      <li><a href="https://unix.stackexchange.com/a/219674/32558">What do the flags in /proc/cpuinfo mean?</a></li>
+      <li><a href="https://stackoverflow.com/a/31394861/895245">How does kernel get an executable binary file running under linux?</a></li>
+      <li><a href="https://unix.stackexchange.com/questions/17122/is-it-possible-to-install-the-linux-kernel-alone/200572#200572">Is it possible to install the linux kernel alone?</a></li>
+      <li><a href="https://stackoverflow.com/questions/11408041/how-to-debug-the-linux-kernel-with-gdb-and-qemu/33203642#33203642">How to debug the Linux kernel with GDB and QEMU?</a></li>
+      <li><a href="https://stackoverflow.com/questions/33852690/can-the-sys-execve-system-call-in-the-linux-kernel-receive-both-absolute-or-re/42290593#42290593">Can the sys_execve() system call in the Linux kernel receive both absolute or relative paths?</a></li>
+      <li><a href="https://stackoverflow.com/questions/5957570/what-is-the-difference-between-the-kernel-space-and-the-user-space/44285809#44285809">What is the difference between the kernel space and the user space?</a></li>
+      <li><a href="https://stackoverflow.com/questions/5748492/is-there-any-api-for-determining-the-physical-address-from-virtual-address-in-li/45128487#45128487">Is there any API for determining the physical address from virtual address in Linux?</a></li>
+      <li><a href="https://stackoverflow.com/questions/2429511/why-do-people-write-the-usr-bin-env-python-shebang-on-the-first-line-of-a-pyt/40938801#40938801">Why do people write the <code class="highlighter-rouge">#!/usr/bin/env</code> python shebang on the first line of a Python script?</a></li>
+      <li><a href="https://unix.stackexchange.com/questions/122717/how-to-create-a-custom-linux-distro-that-runs-just-one-program-and-nothing-else/238579#238579">How to create a custom Linux distro that runs just one program and nothing else?</a></li>
+      <li><a href="https://unix.stackexchange.com/questions/5518/what-is-the-difference-between-the-following-kernel-makefile-terms-vmlinux-vml/482978#482978">What is the difference between the following kernel Makefile terms: vmLinux, vmlinuz, vmlinux.bin, zimage &amp; bzimage?</a></li>
+    </ul>
+  </li>
+  <li>QEMU
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/28315265/how-to-add-a-new-device-in-qemu-source-code/44612957#44612957">How to add a new device in QEMU source code?</a></li>
+      <li><a href="https://askubuntu.com/questions/281763/is-there-any-prebuilt-qemu-ubuntu-image32bit-online/1081171#1081171">How to generate Ubuntu <code class="highlighter-rouge">debootstrap</code> disk images for QEMU?</a></li>
+      <li><a href="https://stackoverflow.com/questions/10949169/how-to-create-a-multi-partition-sd-image-without-root-privileges/52850819#52850819">How to create a multi partition SD disk image without root privileges?</a></li>
+    </ul>
+  </li>
+  <li>GCC
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/3322911/what-do-linkers-do/33690144#33690144">How do linkers and address relocation works?</a></li>
+      <li><a href="https://stackoverflow.com/a/30308151/895245">How many GCC optimization levels are there?</a></li>
+      <li><a href="https://stackoverflow.com/questions/29391965/what-is-partial-linking-in-gnu-linker/53959624#53959624">What is incremental linking or partial linking?</a></li>
+      <li><a href="https://stackoverflow.com/questions/3476093/replacing-ld-with-gold-any-experience/53921263#53921263">GOLD (<code class="highlighter-rouge">-fuse-ld=gold</code>) linker vs the traditional GNU ld</a></li>
+    </ul>
+  </li>
+  <li>C / C++
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/572547/what-does-static-mean-in-a-c-program/14339047#14339047">What does “static” mean in a C program?</a></li>
+      <li><a href="https://stackoverflow.com/questions/1041866/in-c-source-what-is-the-effect-of-extern-c/30526795#30526795">In C++ source, what is the effect of extern “C”?</a></li>
+      <li><a href="https://stackoverflow.com/questions/10186765/char-array-vs-char-pointer-in-c/30661089#30661089">Char array vs Char Pointer in C</a></li>
+      <li><a href="https://stackoverflow.com/questions/847179/multiple-glibc-libraries-on-a-single-host/52454603#52454603">How to compile glibc from source and use it?</a></li>
+    </ul>
+  </li>
+  <li>IEEE 754
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/8341395/what-is-a-subnormal-floating-point-number/53203428#53203428">What is a subnormal floating point number?</a></li>
+      <li><a href="https://stackoverflow.com/questions/18118408/what-is-difference-between-quiet-nan-and-signaling-nan/55648118#55648118">What is difference between quiet NaN and signaling NaN?</a></li>
+      <li><a href="https://stackoverflow.com/questions/2618059/in-java-what-does-nan-mean/55673220#55673220">In Java, what does NaN mean?</a></li>
+    </ul>
+  </li>
+  <li>Algorithms
+    <ul>
+      <li><a href="https://stackoverflow.com/a/29548834/895245">Heap vs Binary Search Tree (BST)</a></li>
+    </ul>
+  </li>
+  <li>Git internals
+    <ul>
+      <li><a href="https://stackoverflow.com/a/25806452/895245">What does the git index contain EXACTLY?</a></li>
+    </ul>
+  </li>
+  <li>Python
+    <ul>
+      <li><a href="https://stackoverflow.com/a/19950198/895245">What is the difference between old style and new style classes in Python?</a></li>
+      <li><a href="https://stackoverflow.com/a/20022860/895245">What is a mixin [in Python], and why are they useful?</a></li>
+    </ul>
+  </li>
+  <li>Web
+    <ul>
+      <li><a href="https://stackoverflow.com/a/28380690/895245">What does enctype=’multipart/form-data’ mean?</a></li>
+      <li><a href="https://stackoverflow.com/a/23877420/895245">How does JavaScript .prototype work?</a></li>
+      <li><a href="https://stackoverflow.com/a/24595458/895245">.prop() vs .attr()</a></li>
+    </ul>
+  </li>
+  <li>OpenGL
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/3191978/how-to-use-glut-opengl-to-render-to-a-file/14324292#14324292">How to use GLUT/OpenGL to render to a file?</a></li>
+      <li><a href="https://stackoverflow.com/questions/8847899/opengl-how-to-draw-text-using-only-opengl-methods/36065835#36065835">How to draw text using only opengl methods?</a></li>
+      <li><a href="https://stackoverflow.com/questions/30864752/is-it-possible-to-build-a-heatmap-from-point-data-at-60-times-per-second/39839788#39839788">Is it possible to build a heatmap from point data at 60 times per second?</a></li>
+      <li><a href="https://stackoverflow.com/questions/2571402/how-to-use-glortho-in-opengl/36046924#36046924">How to use <code class="highlighter-rouge">glOrtho()</code> in OpenGL?</a></li>
+    </ul>
+  </li>
+  <li>Node.js
+    <ul>
+      <li><a href="https://stackoverflow.com/a/22004559/895245">What’s the difference between dependencies, devDependencies and peerDependencies in npm package.json file?</a></li>
+    </ul>
+  </li>
+  <li>Rails
+    <ul>
+      <li><a href="https://stackoverflow.com/a/25626629/895245">What is the difference between &lt;%, &lt;%=, &lt;%# and -%&gt; in ERB in Rails?</a></li>
+    </ul>
+  </li>
+  <li>POSIX
+    <ul>
+      <li><a href="https://stackoverflow.com/a/31865755/895245">What is POSIX?</a></li>
+    </ul>
+  </li>
+  <li>Systems programming
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/868568/what-do-the-terms-cpu-bound-and-i-o-bound-mean/33510470#33510470">What do the terms “CPU bound” and “I/O bound” mean?</a></li>
+      <li><a href="https://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1/53937376#53937376">What do ‘real’, ‘user’ and ‘sys’ mean in the output of time?</a></li>
+    </ul>
+  </li>
+  <li>Security
+    <ul>
+      <li><a href="https://security.stackexchange.com/a/72569/53321">Why is the same origin policy so important?</a></li>
+    </ul>
+  </li>
+  <li>Media
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/2205070/programmatically-synthesizing-programming-music/52126471#52126471">How to programmatically synthesize music?</a></li>
+      <li><a href="https://stackoverflow.com/questions/12831761/how-to-resize-a-picture-using-ffmpegs-sws-scale/36487785#36487785">How to resize a picture using ffmpeg’s sws_scale()?</a></li>
+    </ul>
+  </li>
+  <li>Non technical
+    <ul>
+      <li><a href="https://github.com/cirosantilli/how-to-teach-efficiently">How to teach efficiently</a></li>
+    </ul>
+  </li>
+  <li>Eclipse
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/4038760/how-to-set-up-the-eclipse-for-remote-c-debugging-with-gdbserver/45608937#45608937">How to set up the Eclipse for remote C debugging with gdbserver?</a></li>
+    </ul>
+  </li>
+  <li>Hardware
+    <ul>
+      <li><a href="https://www.quora.com/Are-there-good-open-source-standard-cell-libraries-to-learn-IC-synthesis-with-EDA-tools/answer/Ciro-Santilli">Are there good open source standard cell libraries to learn IC synthesis with EDA tools?</a></li>
+    </ul>
+  </li>
+  <li>Scientific software
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/5854515/large-plot-20-million-samples-gigabytes-of-data/55967461#55967461">A survey of open source interactive plotting software with a 10 million point scatter plot benchmark on Ubuntu 18.10</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="cheatsheets">Cheatsheets</h2>
+
+<p>Larger cross-breeds of tutorials, unit tests and cheatsheets.</p>
+
+<p>Best ones:</p>
+
+<ul>
+  <li><a href="https://github.com/cirosantilli/x86-assembly-cheat">x86 Assembly Cheat</a></li>
+  <li><a href="https://github.com/cirosantilli/x86-bare-metal-examples">x86 Bare Metal Examples</a></li>
+  <li><a href="https://github.com/cirosantilli/cpp-cheat">C++</a></li>
+  <li><a href="https://github.com/cirosantilli/linux-kernel-module-cheat">Linux Kernel Module Cheat</a></li>
+  <li><a href="https://github.com/cirosantilli/linux-cheat">Linux</a></li>
+</ul>
+
+<p>Not bad either:</p>
+
+<ul>
+  <li><a href="https://github.com/cirosantilli/algorithm-cheat">Algorithm</a></li>
+  <li><a href="https://github.com/cirosantilli/android-cheat">Android</a></li>
+  <li><a href="https://github.com/cirosantilli/bash-cheat">Bash</a></li>
+  <li><a href="/db">Databases: MySQL, SQLite</a></li>
+  <li><a href="/git-tutorial">Git</a></li>
+  <li><a href="https://github.com/cirosantilli/gnuplot-cheat">Gnuplot</a></li>
+  <li><a href="/web">Web: HTML, CSS, JavaScript</a></li>
+  <li><a href="https://github.com/cirosantilli/java-cheat">Java</a></li>
+  <li><a href="https://github.com/cirosantilli/latex-cheat">LaTeX</a></li>
+  <li><a href="https://github.com/cirosantilli/networking-cheat">Networking</a></li>
+  <li><a href="https://github.com/cirosantilli/python-cheat">Python</a></li>
+  <li><a href="https://github.com/cirosantilli/rails-cheat">Rails</a></li>
+  <li><a href="https://github.com/cirosantilli/ruby-cheat">Ruby</a></li>
+  <li><a href="https://github.com/cirosantilli/ubuntu-cheat">Ubuntu</a></li>
+  <li><a href="https://github.com/cirosantilli/x86-instruction-encoding-tutorial">x86 Instruction Encoding Tutorial</a></li>
+</ul>
+
+<p>Embryos:</p>
+
+<ul>
+  <li><a href="https://github.com/cirosantilli/arm-assembly-cheat">ARM Assembly</a></li>
+  <li><a href="https://github.com/cirosantilli/rtl-cheat">RTL: VHDL + Verilog</a></li>
+</ul>
+
+<p>Are you still here? <a href="https://github.com/search?o=desc&amp;q=user%3Acirosantilli+-cheat&amp;s=stars&amp;type=Repositories">https://github.com/search?o=desc&amp;q=user%3Acirosantilli+-cheat&amp;s=stars&amp;type=Repositories</a></p>
+
+
+        </main>
+      </div>
+      <footer>
+        <p>Content licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless otherwise noted on the article.</p>
+        <p>Website powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> and <a href="https://pages.github.com/">GitHub Pages</a>. Source at: <a href="https://github.com/cirosantilli/cirosantilli.github.io">https://github.com/cirosantilli/cirosantilli.github.io</a></p>
+        <p>To contact me publicly about any general subject, including saying hi or suggestions about this website, please <a href="https://github.com/cirosantilli/cirosantilli.github.io/issues/new">create a GitHub issue in the cirosantilli.github.io repo</a>.</p>
+        <p>
+          For comments about China, please first read
+          <a href="https://github.com/cirosantilli/china-dictatorship#faq">the FAQ</a> and
+          <a href="https://github.com/cirosantilli/china-dictatorship/blob/master/CONTRIBUTING.md">the CONTRIBUTING</a> and then
+          <a href="https://github.com/cirosantilli/china-dictatorship/issues/new">create a GitHub issue in the china-dictatorship repo</a>.
+        </p>
+        <p>If you absolutely need private contact, extract my email from my GitHub repos or use LinkedIn.</p>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Disqus">Disqus comments</a> were removed from this website in 2019-05-04,
+          a manual dump is <a href="/disqus-archive/">available here</a>.
+          <a href="https://github.com/cirosantilli/cirosantilli.github.io/tree/fee98be02a34d5d4ccf829c4df89f1a5140881fc#why-i-removed-disqus-comments-from-the-website-in-2019-05-04">Rationale</a>.
+        </p>
+        <p>Opinions and content are my own, not my employer's.</p>
+      </footer>
+        
+    </div>
+    <!-- Scripts -->
+      <!--data table-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js" ></script>
+        <script>
+          $('.data-table').dataTable({
+            //"aaSorting": [[0,'asc'], [1,'asc'], [2, 'asc'], [3, 'asc']],
+            "aaSorting": [],
+            "bFilter": false,
+            "bInfo": false,
+            "bPaginate": false
+          });
+        </script>
+      <!--mathjax-->
+        <script
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        ></script>
+        <script>
+          MathJax.Hub.Config({
+              jax: ["input/TeX","output/HTML-CSS"],
+              displayAlign: "left",
+              displayIndent: "20px"
+          });
+        </script>
+      <!--google analytics-->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-47867706-1', 'auto');
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+
+        </script>
+  </body>
+</html>
